@@ -21,7 +21,7 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  max = 9999
+  min = 9999
   
   array.length.times do |i|
     if(array[i]<min) then
