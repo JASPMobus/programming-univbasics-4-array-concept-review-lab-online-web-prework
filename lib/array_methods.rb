@@ -1,22 +1,18 @@
 def find_element_index(array, value_to_find)
-  ret = -1
-  
   array.length.times do |i|
-    if array[i]===value_to_find {
-      ret = i
-    }
+    if array[i]===value_to_find then
+      return i
+    end
   end
-  
-  return ret
 end
 
 def find_max_value(array)
   max = 0
   
   array.length.times do |i|
-    if(array[i]>max) {
+    if(array[i]>max) then
       max = array[i]
-    }
+    end
   end
   
   return max
@@ -26,9 +22,9 @@ def find_min_value(array)
   max = 9999
   
   array.length.times do |i|
-    if(array[i]<min) {
+    if(array[i]<min) then
       min = array[i]
-    }
+    end
   end
   
   return max
